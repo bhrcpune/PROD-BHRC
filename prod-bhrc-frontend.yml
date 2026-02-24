@@ -17,7 +17,7 @@ spec:
         image: 014498634556.dkr.ecr.ap-south-1.amazonaws.com/bhrc-frontend:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 5002
+        - containerPort: 5005
       imagePullSecrets:
       - name: regcred
 ---
@@ -30,6 +30,6 @@ spec:
     app: frontend
   ports:
   - port: 80
-    targetPort: 5002
+    targetPort: 5005
   type: ClusterIP
 
