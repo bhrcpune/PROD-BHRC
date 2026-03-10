@@ -13,13 +13,13 @@ spec:
         app: patient
     spec:
       containers:
-      - name: patient
-        image: 014498634556.dkr.ecr.ap-south-1.amazonaws.com/bhrc-patient:latest
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 5001
+        - name: patient
+          image: 014498634556.dkr.ecr.ap-south-1.amazonaws.com/bhrc-patient:20260310164545
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5001
       imagePullSecrets:
-      - name: regcred
+        - name: regcred
 ---
 apiVersion: v1
 kind: Service
@@ -29,6 +29,6 @@ spec:
   selector:
     app: patient
   ports:
-  - port: 80
-    targetPort: 5001
+    - port: 80
+      targetPort: 5001
   type: ClusterIP
