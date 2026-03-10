@@ -13,13 +13,13 @@ spec:
         app: auth
     spec:
       containers:
-      - name: auth
-        image: 014498634556.dkr.ecr.ap-south-1.amazonaws.com/bhrc-auth:latest
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 5003
+        - name: auth
+          image: 014498634556.dkr.ecr.ap-south-1.amazonaws.com/bhrc-auth:20260310173718
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5003
       imagePullSecrets:
-      - name: regcred
+        - name: regcred
 ---
 apiVersion: v1
 kind: Service
@@ -29,6 +29,6 @@ spec:
   selector:
     app: auth
   ports:
-  - port: 80
-    targetPort: 5003
+    - port: 80
+      targetPort: 5003
   type: ClusterIP
