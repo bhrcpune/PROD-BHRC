@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: tenant
-          image: 014498634556.dkr.ecr.ap-south-1.amazonaws.com/bhrc-tenant:20260311112513
+          image: 014498634556.dkr.ecr.ap-south-1.amazonaws.com/bhrc-tenant:20260311123630
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
