@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: 014498634556.dkr.ecr.ap-south-1.amazonaws.com/bhrc-frontend:20260311112518
+          image: 014498634556.dkr.ecr.ap-south-1.amazonaws.com/bhrc-frontend:20260320093520
           imagePullPolicy: Always
           ports:
             - containerPort: 5005
