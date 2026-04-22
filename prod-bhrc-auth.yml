@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: 014498634556.dkr.ecr.ap-south-1.amazonaws.com/bhrc-auth:20260421092148
+          image: 014498634556.dkr.ecr.ap-south-1.amazonaws.com/bhrc-auth:20260422051339
           imagePullPolicy: Always
           ports:
             - containerPort: 5003
